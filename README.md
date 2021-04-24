@@ -20,3 +20,8 @@ Building a docker image with Pyspark and with an Azure Gen2 storage connector, s
 ```
 
 ![Pyspark locally](/images/Spark_locally.PNG)
+
+
+### Run Docker image in Visual Studio Code
+![Install docker](/images/install_docker.PNG) 
+![Install extension](/images/extension.PNG) 
