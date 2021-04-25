@@ -14,23 +14,26 @@ Building a docker image with Pyspark and a Azure Gen2 storage connection, so as 
 ```
 
 
-### Test pyspark locally 
+
+### Run docker image in Visual Studio Code
+
+#### Install docker 
+![Install docker](/images/install_docker.PNG) 
+
+#### Install extension to run container in another window
+![Install extension](/images/extension.PNG) 
+
+
+#### Test pyspark locally 
+
+Type pyspark into the terminal and you should be promoted with the Spark UI at localhost:4040
+
 ```
     pyspark 
 ```
 
 ![Pyspark locally](/images/Spark_locally.PNG)
 
-
-### Run docker image in Visual Studio Code
-
-Install docker 
-![Install docker](/images/install_docker.PNG) 
-
-Install extension to run container in another window
-![Install extension](/images/extension.PNG) 
-
-Type pyspark into the terminal and you should be promoted with the Spark UI at localhost:4040
 ![Install extension](/images/spark_ui.PNG) 
 
 
