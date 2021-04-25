@@ -14,7 +14,7 @@ Building a docker image with Pyspark and a Azure Gen2 storage connection, so as 
 ```
 
 
-### Test Pypsark locally 
+### Test pyspark locally 
 ```
     pyspark 
 ```
@@ -22,7 +22,7 @@ Building a docker image with Pyspark and a Azure Gen2 storage connection, so as 
 ![Pyspark locally](/images/Spark_locally.PNG)
 
 
-### Run Docker image in Visual Studio Code
+### Run docker image in Visual Studio Code
 
 Install docker 
 ![Install docker](/images/install_docker.PNG) 
