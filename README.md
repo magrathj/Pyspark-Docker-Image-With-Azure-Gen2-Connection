@@ -34,4 +34,13 @@ Type pyspark into the terminal and you should be promoted with the Spark UI at l
 ![Install extension](/images/spark_ui.PNG) 
 
 
+
+### Run python script with spark dataframe
+
+
+![read from the lake](/images/spark_dataframe.PNG)
+
 ### Connect to Azure Data Lake Storage (ADLS) Gen2
+
+
+![read from the lake](/images/json_from_lake.PNG)

@@ -14,6 +14,8 @@ ARG spark_version="3.1.1"
 ARG hadoop_version="3.2"
 ARG spark_checksum="E90B31E58F6D95A42900BA4D288261D71F6C19FA39C1CB71862B792D1B5564941A320227F6AB0E09D946F16B8C1969ED2DEA2A369EC8F9D2D7099189234DE1BE"
 ARG openjdk_version="11"
+ARG hadoop_checksum="054753301927d31a69b80be3e754fd330312f0b1047bcfa4ab978cdce18319ed912983e6022744d8f0c8765b98c87256eb1c3017979db1341d583d2cee22d029"
+
 
 
 ENV APACHE_SPARK_VERSION="${spark_version}" \
@@ -73,3 +75,22 @@ RUN cp -p "$SPARK_HOME/conf/spark-defaults.conf.template" "$SPARK_HOME/conf/spar
 RUN conda install --quiet --yes --satisfied-skip-solve \
     'pyarrow=3.0.*' && \
     conda clean --all -f -y
+
+
+# Hadoop installation
+WORKDIR /tmp
+
+RUN wget -c https://downloads.apache.org/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz -O - | tar -xz -C /usr/local --owner root --group root --no-same-owner && \ 
+    mv /usr/local/hadoop-3.2.2 /usr/local/hadoop
+
+WORKDIR /usr/local
+
+# Configure Hadoop
+ENV HADOOP_HOME=/usr/local/hadoop
+ENV HADOOP_CLASSPATH=/usr/local/hadoop/share/hadoop/tools/lib/*
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+
+
+RUN cp wildfly-openssl-1.0.7.Final.jar /usr/local/spark/jars
+RUN cp azure-* /usr/local/spark/jars
+RUN cp hadoop-azure-* /usr/local/spark/jars 
