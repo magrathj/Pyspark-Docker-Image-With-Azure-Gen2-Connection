@@ -34,14 +34,21 @@ Type pyspark into the terminal and you should be promoted with the Spark UI at l
 ![Install extension](/images/spark_ui.PNG) 
 
 
+### Test docker image
 
-### Run python script with spark dataframe
+#### Run python script to test pyspark connection
 
-
+```
+    python test_spark.py
+```
 ![read from the lake](/images/spark_dataframe.PNG)
 
-### Connect to Azure Data Lake Storage (ADLS) Gen2
+#### Run python script to test the connect to Azure Data Lake Storage (ADLS) Gen2
 
+
+```
+    python test_adls.py
+```
 
 ![read from the lake](/images/json_from_lake.PNG)
 
