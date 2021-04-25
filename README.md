@@ -44,3 +44,14 @@ Type pyspark into the terminal and you should be promoted with the Spark UI at l
 
 
 ![read from the lake](/images/json_from_lake.PNG)
+
+
+### References 
+
+[Databricks docker deployments](https://www.datamechanics.co/blog-post/spark-and-docker-your-spark-development-cycle-just-got-ten-times-faster)
+
+[Apache Spark docker deployments](https://towardsdatascience.com/diy-apache-spark-docker-bb4f11c10d24)
+
+[Delta connecting to ADLS Gen2](https://docs.delta.io/latest/delta-storage.html#azure-data-lake-storage-gen2)
+
+[Connecting to ADLS Gen1 locally](https://medium.com/azure-data-lake/connecting-your-own-hadoop-or-spark-to-azure-data-lake-store-93d426d6a5f4)
