@@ -76,6 +76,11 @@ RUN conda install --quiet --yes --satisfied-skip-solve \
     'pyarrow=3.0.*' && \
     conda clean --all -f -y
 
+# Install pyspark
+RUN conda install --quiet --yes --satisfied-skip-solve \
+    'pyspark' && \
+    conda clean --all -f -y
+
 
 # Hadoop installation
 WORKDIR /tmp
