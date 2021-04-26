@@ -91,6 +91,6 @@ ENV HADOOP_CLASSPATH=/usr/local/hadoop/share/hadoop/tools/lib/*
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 
 
-RUN cp wildfly-openssl-1.0.7.Final.jar /usr/local/spark/jars
-RUN cp azure-* /usr/local/spark/jars
-RUN cp hadoop-azure-* /usr/local/spark/jars 
+RUN cp /usr/local/hadoop/share/hadoop/tools/lib/wildfly-openssl-1.0.7.Final.jar /usr/local/spark/jars
+RUN cp /usr/local/hadoop/share/hadoop/tools/lib/azure-* /usr/local/spark/jars
+RUN cp /usr/local/hadoop/share/hadoop/tools/lib/hadoop-azure-* /usr/local/spark/jars 
