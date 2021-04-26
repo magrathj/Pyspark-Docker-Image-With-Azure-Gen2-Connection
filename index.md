@@ -1,8 +1,11 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/magrathj/Pyspark-Docker-Image-With-Azure-Gen2-Connection/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[editor on GitHub](https://github.com/magrathj/Pyspark-Docker-Image-With-Azure-Gen2-Connection/edit/gh-pages/index.md) 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Setting up spark locally can be a bit of a faff, especially when trying to then connect to external data stores like Azure Data Lake Store (ADLS). 
+
+To simplify this, I've put together a docker image with Pyspark and a Azure Gen2 storage connection. This way developers can build spark applications on their local machines, then deploy those applications on to compute engine like Databrick or Kubernetes.
+
 
 ### Markdown
 
