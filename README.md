@@ -25,6 +25,7 @@ Building a docker image with Pyspark and a Azure Gen2 storage connection, so as 
 ![Install extension](/images/extension.PNG) 
 
 
+
 #### Test pyspark locally 
 
 Type pyspark into the terminal and you should be promoted with the Spark UI at localhost:4040
@@ -66,3 +67,5 @@ Type pyspark into the terminal and you should be promoted with the Spark UI at l
 [Delta connecting to ADLS Gen2](https://docs.delta.io/latest/delta-storage.html#azure-data-lake-storage-gen2)
 
 [Connecting to ADLS Gen1 locally](https://medium.com/azure-data-lake/connecting-your-own-hadoop-or-spark-to-azure-data-lake-store-93d426d6a5f4)
+
+[developing inside docker container using visual studio code](https://code.visualstudio.com/docs/remote/containers)
