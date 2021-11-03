@@ -3,6 +3,8 @@ Building a docker image with Pyspark and a Azure Gen2 storage connection, so as 
 
 [![Docker Image CI](https://github.com/magrathj/Pyspark-Docker-Image-With-Azure-Gen2-Connection/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/magrathj/Pyspark-Docker-Image-With-Azure-Gen2-Connection/actions/workflows/docker-image.yml)
 
+
+
 ### Build Docker image
 ```
     docker build -t sparklocal .
